@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>product landing </title>
+	<link rel="stylesheet" type="text/css" href="3.css">
+</head>
+<body>
+	<header>
+
+		<ul class="nav-menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+      	<li><a href="#">Address</a></li>
+		</ul>
+	</header>
+
+
+	<div class="body">
+
+			<div class="body-right">
+				<h2>RAMBA INSTANT NOODLES</h2>
+				
+				<h2><u>Description</u></h2>
+					<p>
+						Ramba is a glorious white instant noodle. One of the popular snack in Nepal. It can be eaten straight from the package or cooked in soup form or can be boiled and stir fried like chowmein. Unlike ordinary noodles, RAMBA is pre-cooked, flavored, seasoned and fried before packaging.
+				    </p><br>
+				    <ul>
+				    	<li>It comes in various seasoning flavors.</li>
+				    	<li>Includes masala (mixed spices) which can be used to prepare the soup or stir fry.</li>
+				    	<li>Ramba is rich in carbohydrates, minerals and proteins.</li>
+				    	<li><strong>Ships in Box of - 30 pack each</strong></li>
+				    </ul><br>
+				    <p id="price">Price : Select the Option below</p><br>
+				    <p>Availabe Option :</p>
+			        <button type="button" onclick="OneBoxFunction()">1 Box of 30 pack each
+			        </button>
+	                <button type="button" onclick="OnePackFunction()">1 pack</button>
+			        <script type="text/javascript">
+			        function OneBoxFunction(){
+			        	document.getElementById("price").innerHTML="Price : Rs.580 Save Rs.20 ";
+			        } 
+			        function OnePackFunction(){
+			        	document.getElementById("price").innerHTML="Price : Rs.20";
+			        }
+			    </script>
+				<button class="buy-now">
+					<a href="#">Buy Now </a>
+				</button>
+			
+				
+			</div>
+
+	</div>
+
+
+</body>
+</html>
