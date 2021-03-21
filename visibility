@@ -1,0 +1,24 @@
+<html>
+    <head><title>Visibility Of Image</title></head>
+    <body>
+        <img src="kun.jpg" id="pic"><br/>
+
+        <button onclick="Click()">Click Here</button>
+
+        <script>
+
+        function Click(){
+            var img = document.getElementById('pic');
+
+            if(img.style.visibility == "visible"){
+                img.style.visibility = "hidden";
+            }
+            else{
+                img.style.visibility = "visible";
+            }
+
+        }
+
+        </script>
+    </body>
+</html>

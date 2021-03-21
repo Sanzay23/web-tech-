@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Position And Stacking</title>
+        <style>
+            #pic1{
+                position:absolute;
+            }
+            #pic2{
+                position:absolute;
+                top:70px;
+                left: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="kun.jpg" id="pic1" onclick="Click('pic1')">
+        <img src="kun.jpg" id="pic2" onclick="Click('pic2')">
+
+        <script>
+
+        function Click(id){
+            if(id == 'pic1'){
+                document.getElementById("pic1").style.zIndex = "1";
+                document.getElementById("pic2").style.zIndex = "0";
+            }
+            else{
+                document.getElementById("pic2").style.zIndex = "1";
+                document.getElementById("pic1").style.zIndex = "0";
+            }
+        }
+
+        </script>
+    </body>
+</html>
